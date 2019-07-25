@@ -17,7 +17,7 @@ sudo sed -i 's|`sed.*|/modules/modulefiles/|' sh bash
 source /usr/share/modules/init/bash
 
 ##### install modules #####
-sudo git clone https://code.stanford.edu/lucasanmelo/snp-modules.git /modules
+sudo git clone https://github.com/lanmelo/snp-modules.git /modules
 sudo chown -R ubuntu:ubuntu /modules
 cd /modules
 mkdir src bin Rlibs
