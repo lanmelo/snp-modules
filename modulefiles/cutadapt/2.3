@@ -1,0 +1,15 @@
+#%Module 1.0
+
+proc ModulesHelp { } {
+        
+        puts stderr "Cutadapt v2.3"
+        puts stderr "Finds and removes adapter sequences, primers, and poly-A tails"
+	puts stderr "For help enter 'cutadapt --help' in the command line"
+
+}
+
+module-whatis   "Finds and removes adapter sequences, primers, and poly-A tails"
+
+prepend-path	PATH            /modules/bin/cutadapt-2.3/bin
+
+conflict	cutadapt

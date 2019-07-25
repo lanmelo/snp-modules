@@ -1,0 +1,22 @@
+#%Module 1.0
+
+proc ModulesHelp { } {
+	
+	puts stderr "Tophat v2.1.1"
+	puts stderr "Spliced read mapper for RNA-seq"
+	puts stderr "Note: Requires bowtie2 and samtools and python/2.7.16"
+	puts stderr "For help enter 'tophat' in the command line"
+
+}
+
+module-whatis   "Spliced read mapper for RNA-seq"
+
+prepend-path	PATH            /modules/src/tophat-2.1.1.Linux_x86_64
+
+prereq		samtools
+
+prereq		bowtie2
+
+prereq		python/2.7.16
+
+conflict	tophat

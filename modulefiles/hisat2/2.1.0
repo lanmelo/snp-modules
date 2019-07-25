@@ -1,0 +1,15 @@
+#%Module 1.0
+
+proc ModulesHelp { } {
+	
+	puts stderr "HISAT2 v2.1.0"
+	puts stderr "A DNA and RNA read aligner"
+	puts stderr "For help enter 'hisat2 --help' in the command line"
+
+}
+
+module-whatis	"A DNA and RNA read aligner"
+
+prepend-path	PATH		/modules/src/hisat2-2.1.0
+
+conflict	hisat2

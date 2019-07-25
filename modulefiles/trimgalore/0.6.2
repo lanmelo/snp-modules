@@ -1,0 +1,18 @@
+#%Module 1.0
+
+proc ModulesHelp { } {
+        
+        puts stderr "TrimGalore v0.6.2"
+        puts stderr "Wrapper script to automate quality and adater trimming, and quality control"
+	puts stderr "Note: Requires cutadapt, and optionally fastqc"
+	puts stderr "For help enter 'trim_galore --help' in the command line"
+
+}
+
+module-whatis   "Wrapper script to automate quality and adater trimming, and quality control"
+
+prepend-path	PATH            /modules/src/TrimGalore-0.6.2
+
+prereq		cutadapt
+
+conflict	trimgalore

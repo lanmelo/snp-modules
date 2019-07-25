@@ -1,0 +1,15 @@
+#%Module 1.0
+
+proc ModulesHelp { } {
+	
+	puts stderr "\tBurrows-Wheeler Aligner v0.7.17"
+	puts stderr "\tPackage for mapping low-divergent sequences against a large reference genome"
+	puts stderr "\tFor help enter 'bwa' in the command line"
+
+}
+
+module-whatis   "Package for mapping low-divergent sequences against a large reference genome"
+
+prepend-path	PATH		/modules/src/bwa-0.7.17
+
+conflict	bwa

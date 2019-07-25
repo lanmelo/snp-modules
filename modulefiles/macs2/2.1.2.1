@@ -1,0 +1,15 @@
+#%Module 1.0
+
+proc ModulesHelp { } {
+        
+        puts stderr "MACS v2.1.2.1"
+        puts stderr "ChIP-seq peak caller"
+	puts stderr "For help enter 'macs2 --help' in the command line"
+
+}
+
+module-whatis   "ChIP-seq peak caller"
+
+prepend-path	PATH            /modules/bin/MACS2-2.1.2.1/bin
+
+conflict	macs2

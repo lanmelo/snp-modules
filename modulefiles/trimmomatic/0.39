@@ -1,0 +1,18 @@
+#%Module 1.0
+
+proc ModulesHelp { } {
+        
+        puts stderr "Trimmomatic v0.39"
+        puts stderr "Trims and crops Illumina FASTQ data and removes adapters"
+	puts stderr "For help enter 'trimmomatic' in the command line"
+
+}
+
+module-whatis   "Trims and crops Illumina FASTQ data and removes adapters"
+
+prepend-path	PATH            	/modules/src/Trimmomatic-0.39
+
+set-alias	trimmomatic		"java -jar /modules/src/Trimmomatic-0.39/trimmomatic-0.39.jar \$*"
+
+conflict	trimmomatic
+

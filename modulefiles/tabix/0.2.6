@@ -1,0 +1,15 @@
+#%Module 1.0
+
+proc ModulesHelp { } {
+	
+	puts stderr "Tabix v0.2.6"
+	puts stderr "Generic indexer for TAB-delimited genome position files"
+	puts stderr "For help enter 'tabix' in the command line"
+
+}
+
+module-whatis   "Generic indexer for TAB-delimited genome position files"
+
+prepend-path	PATH            /modules/src/tabix-0.2.6
+
+conflict	tabix

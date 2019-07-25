@@ -1,0 +1,14 @@
+#%Module 1.0
+
+proc ModulesHelp { } {
+	
+	puts stderr "Python v3.7.3"
+	puts stderr "Easy to use programming language"
+
+}
+
+module-whatis   "Easy to use programming language"
+
+prepend-path	PATH		/modules/bin/python-3.7.3/bin/
+
+conflict	python

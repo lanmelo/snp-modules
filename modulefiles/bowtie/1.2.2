@@ -1,0 +1,15 @@
+#%Module 1.0
+
+proc ModulesHelp { } {
+	
+	puts stderr "Bowtie v1.2.2"
+	puts stderr "Tool for aligning sequencing reads to long reference sequences"
+	puts stderr "For help enter 'bowtie --help' in the command line"
+
+}
+
+module-whatis   "Tool for aligning sequencing reads to long reference sequences"
+
+prepend-path	PATH		 /modules/src/bowtie-1.2.2
+
+conflict	bowtie

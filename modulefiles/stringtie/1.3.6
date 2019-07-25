@@ -1,0 +1,15 @@
+#%Module 1.0
+
+proc ModulesHelp { } {
+	
+	puts stderr "Stringtie v1.3.6"
+	puts stderr "Assembles transcripts, estimates their abundances, and tests for differential expression"
+	puts stderr "For help enter 'stringtie --help' in the command line"
+
+}
+
+module-whatis   "Assembles transcripts, estimates their abundances, and tests for differential expression"
+
+prepend-path	PATH            /modules/src/stringtie-1.3.6.Linux_x86_64
+
+conflict	stringtie

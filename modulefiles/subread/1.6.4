@@ -1,0 +1,15 @@
+#%Module 1.0
+
+proc ModulesHelp { } {
+	
+	puts stderr "Subread v1.6.4"
+	puts stderr "A NGS package that includes featureCounts"
+	puts stderr "For help enter 'featureCounts' in the command line"
+
+}
+
+module-whatis	"A NGS package that includes featureCounts"
+
+prepend-path	PATH		/modules/src/subread-1.6.4-Linux-x86_64/bin
+
+conflict	subread

@@ -1,0 +1,19 @@
+#%Module 1.0
+
+proc ModulesHelp { } {
+        
+        puts stderr "Matplotlib v3.1.0"
+        puts stderr "Python library for 2D plotting"
+	puts stderr "Note: Requires python/3.7.3"
+
+}
+
+module-whatis   "Python library for 2D plotting"
+
+prepend-path	PATH		/modules/bin/matplotlib-3.1.0/bin
+
+prepend-path	PYTHONPATH	/modules/bin/matplotlib-3.1.0
+
+prereq		python/3.7.3
+
+conflict	matplotlib

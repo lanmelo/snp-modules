@@ -1,0 +1,19 @@
+#%Module 1.0
+
+proc ModulesHelp { } {
+        
+        puts stderr "Numpy v1.16.1"
+        puts stderr "Python library for scientific computing, including support for large N-dimensional matrices"
+	puts stderr "Note: Requires python/3.7.3"
+
+}
+
+module-whatis   "Python library for scientific computing, including support for large N-dimensional matrices"
+
+prepend-path	PATH            /modules/bin/numpy-1.16.1/bin
+
+prepend-path	PYTHONPATH	/modules/bin/numpy-1.16.1
+
+prereq		python/3.7.3
+
+conflict	numpy

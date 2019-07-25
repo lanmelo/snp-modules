@@ -1,0 +1,17 @@
+#%Module 1.0
+
+proc ModulesHelp { } {
+        
+        puts stderr "Pysam v0.15.2"
+        puts stderr "Python wrapper for htslib, which powers samtools, bcftools, and tabix"
+	puts stderr "Note: Requires python/3.7.3"
+
+}
+
+module-whatis   "Python wrapper for htslib, which powers samtools, bcftools, and tabix"
+
+prepend-path	PYTHONPATH	/modules/src/pysam-0.15.2
+
+prereq		python/3.7.3
+
+conflict	pysam

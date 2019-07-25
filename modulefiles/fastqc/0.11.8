@@ -1,0 +1,15 @@
+#%Module 1.0
+
+proc ModulesHelp { } {
+	
+	puts stderr "FastQC v0.11.8"
+	puts stderr "A quality control tool for high throughput sequence data"
+	puts stderr "For help enter 'fastqc --help' in the command line"
+
+}
+
+module-whatis	"A quality control tool for high throughput sequence data"
+
+prepend-path	PATH		/modules/src/FastQC-0.11.8
+
+conflict	fastqc

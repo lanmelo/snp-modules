@@ -1,0 +1,16 @@
+#%Module 1.0
+
+proc ModulesHelp { } {
+	
+	puts stderr "\tSalmon v0.14.1"
+	puts stderr "\tPseudoaligner for RNA-seq data"
+	puts stderr "\tFor help enter 'salmon --help' in the command line"
+
+}
+
+module-whatis   "Pseudoaligner for RNA-seq data"
+
+prepend-path	PATH		/modules/src/salmon-0.14.1/bin
+
+conflict	salmon
+

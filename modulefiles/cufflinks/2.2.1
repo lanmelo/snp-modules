@@ -1,0 +1,18 @@
+#%Module 1.0
+
+proc ModulesHelp { } {
+        
+        puts stderr "Cufflinks v2.2.1"
+        puts stderr "Assembles transcripts, estimates their abundances, and tests for differential expression"
+	puts stderr "Note: Requires python/2.7.16"
+	puts stderr "For help enter 'cufflinks' in the command line"
+
+}
+
+module-whatis   "Assembles transcripts, estimates their abundances, and tests for differential expression"
+
+prepend-path	PATH		/modules/src/cufflinks-2.2.1.Linux_x86_64
+
+prereq		python/2.7.16
+
+conflict	cufflinks

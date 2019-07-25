@@ -1,0 +1,19 @@
+#%Module 1.0
+
+proc ModulesHelp { } {
+        
+        puts stderr "Biopython v1.73"
+        puts stderr "Python library for bioinformatics"
+	puts stderr "Note: Requires python/3.7.3"
+
+}
+
+module-whatis   "Python library for bioinformatics"
+
+prepend-path	PATH            /modules/bin/biopython-1.73/bin
+
+prepend-path	PYTHONPATH	/modules/bin/biopython-1.73
+
+prereq		python/3.7.3
+
+conflict	biopython

@@ -1,0 +1,20 @@
+#%Module 1.0
+
+proc ModulesHelp { } {
+	
+	puts stderr "VCFtools v0.1.13"
+	puts stderr "Tool for handling VCF files"
+	puts stderr "Note: Requires tabix"
+	puts stderr "For help enter 'vcftools' in the command line"
+
+}
+
+module-whatis   "Tool for handling VCF files"
+
+prepend-path	PATH            /modules/src/vcftools_0.1.13/bin
+
+setenv		PERL5LIB	/modules/src/vcftools_0.1.13/perl
+
+prereq		tabix
+
+conflict	vcftools

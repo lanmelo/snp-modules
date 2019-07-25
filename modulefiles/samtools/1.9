@@ -1,0 +1,15 @@
+#%Module 1.0
+
+proc ModulesHelp { } {
+	
+	puts stderr "Samtools v1.9"
+	puts stderr "Set of utilities that manipulate alignments in the SAM format"
+	puts stderr "Note: Directly works on files in S3 without copying"
+	puts stderr "For help enter 'samtools' in the command line"
+}
+
+module-whatis   "Set of utilities that manipulate alignments in the SAM format"
+
+prepend-path	PATH		/modules/bin/samtools-1.9/bin/
+
+conflict	samtools

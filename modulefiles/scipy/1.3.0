@@ -1,0 +1,19 @@
+#%Module 1.0
+
+proc ModulesHelp { } {
+        
+        puts stderr "Scipy v1.3.0"
+        puts stderr "Python library for scientific computing, including support for linear algebra, integration, ODE, etc."
+	puts stderr "Note: Requires python/3.7.3"
+
+}
+
+module-whatis   "Python library for scientific computing, including support for linear algebra, integration, ODE, etc."
+
+prepend-path	PATH            /modules/bin/scipy-1.3.0/bin
+
+prepend-path	PYTHONPATH	/modules/bin/scipy-1.3.0
+
+prereq		python/3.7.3
+
+conflict	scipy

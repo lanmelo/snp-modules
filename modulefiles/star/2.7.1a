@@ -1,0 +1,15 @@
+#%Module 1.0
+
+proc ModulesHelp { } {
+	
+	puts stderr "Spliced Transcripts Alignment to a Reference v2.7.1a"
+	puts stderr "RNA-seq aligner"
+	puts stderr "For help enter 'STAR --help' in the command line"
+
+}
+
+module-whatis   "RNA-seq aligner"
+
+prepend-path	PATH            /modules/src/STAR-2.7.1a/bin/Linux_x86_64
+
+conflict	star

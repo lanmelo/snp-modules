@@ -1,0 +1,17 @@
+#%Module 1.0
+
+proc ModulesHelp { } {
+	
+	puts stderr "R v3.6.0"
+	puts stderr "Programming language for statistical computing"
+	puts stderr "For help enter 'R --help' in the command line"
+ 
+}
+
+module-whatis   "Programming language for statistical computing"
+
+prepend-path	PATH		/modules/bin/R-3.6.0/bin
+
+setenv		R_LIBS		/modules/Rlibs
+
+conflict	r

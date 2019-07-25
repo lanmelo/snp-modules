@@ -1,0 +1,15 @@
+#%Module 1.0
+
+proc ModulesHelp { } {
+	
+	puts stderr "Bamtools v2.3.5.1"
+	puts stderr "Tool for handling BAM files"
+	puts stderr "For help enter 'bamtools' in the command line"
+	
+}
+
+module-whatis   "Tool for handling BAM files"
+
+prepend-path	PATH            /modules/bin/bamtools/bin/
+
+conflict	bamtools

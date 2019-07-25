@@ -1,0 +1,16 @@
+#%Module 1.0
+
+proc ModulesHelp { } {
+	
+	puts stderr "\tKallisto v0.46.0"
+	puts stderr "\tPseudoaligner for RNA-seq data"
+	puts stderr "\tFor help enter 'kallisto' in the command line"
+
+}
+
+module-whatis   "Pseudoaligner for RNA-seq data"
+
+prepend-path	PATH		/modules/bin/kallisto-0.46.0/bin
+
+conflict	kallisto
+

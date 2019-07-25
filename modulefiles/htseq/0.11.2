@@ -1,0 +1,19 @@
+#%Module 1.0
+
+proc ModulesHelp { } {
+        
+        puts stderr "HTSeq v0.11.2"
+        puts stderr "Python package for analyzing high-throughput sequencing data"
+	puts stderr "Note: Requires python/3.7.3"
+
+}
+
+module-whatis   "Python package for analyzing high-throughput sequencing data"
+
+prepend-path	PATH		/modules/bin/HTSeq-0.11.2/bin
+
+prepend-path	PYTHONPATH	/modules/bin/HTSeq-0.11.2
+
+prereq		python/3.7.3
+
+conflict	htseq
