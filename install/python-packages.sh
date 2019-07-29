@@ -19,8 +19,6 @@ install pysam 		0.15.2
 module load numpy
 install HTSeq 0.11.2
 
-module purge
-
 # install cutadapt
 BASE=/modules/bin/cutadapt-2.3
 mkdir $BASE
@@ -33,3 +31,5 @@ mkdir $BASE
 virtualenv -p /modules/bin/python-2.7.16/bin/python $BASE/venv
 $BASE/venv/bin/pip install --install-option="--install-scripts=$BASE/bin" numpy==1.16.1
 $BASE/venv/bin/pip install --install-option="--install-scripts=$BASE/bin" MACS2==2.1.2.1
+
+module purge
