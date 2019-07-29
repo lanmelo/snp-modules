@@ -23,7 +23,7 @@ mkdir src bin go Rlibs
 for file in /modules/install/*; do $file; done
 
 ##### create /shared/singularity #####
-echo 'sudo mkdir /shared/singularity' >> ~/.bashrc
+echo 'sudo mkdir -p /shared/singularity' >> ~/.bashrc
 
 ##### cleanup #####
 sudo shred -u /home/ubuntu/.ssh/* /root/.ssh/*
