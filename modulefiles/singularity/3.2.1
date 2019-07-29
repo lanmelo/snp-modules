@@ -1,0 +1,14 @@
+#%Module 1.0
+
+proc ModulesHelp { } {
+	
+	puts stderr "Singularity 3.2.1"
+	puts stderr "Container platform for HPC systems"
+
+}
+
+module-whatis   "Container platform for HPC systems"
+
+prepend-path	PATH		/modules/bin/singularity-3.2.1/bin
+
+conflict	singularity
