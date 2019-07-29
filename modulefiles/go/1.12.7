@@ -1,0 +1,18 @@
+#%Module 1.0
+
+proc ModulesHelp { } {
+	
+	puts stderr "Go v1.12.7"
+	puts stderr "C-like programming language"
+
+}
+
+module-whatis   "C-like programming language"
+
+prepend-path	PATH		/modules/src/go-1.12.7/bin
+
+setenv		GOPATH		/modules/go
+
+append-path	PATH		/modules/go/bin
+
+conflict	go

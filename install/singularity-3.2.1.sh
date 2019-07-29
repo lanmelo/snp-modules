@@ -8,7 +8,7 @@ sudo -E mkdir -p $GOPATH/src/github.com/sylabs
 cd $GOPATH/src/github.com/sylabs
 sudo wget https://github.com/sylabs/singularity/releases/download/v3.2.1/singularity-3.2.1.tar.gz
 sudo tar -xzf singularity-3.2.1.tar.gz
-rm singularity-3.2.1.tar.gz
+rm -f singularity-3.2.1.tar.gz
 cd singularity
 sudo chown -R ubuntu:ubuntu .
 ./mconfig --prefix=/modules/bin/singularity-3.2.1 --localstatedir=/shared/singularity

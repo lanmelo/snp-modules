@@ -2,3 +2,4 @@ src
 bin
 Rlibs
 go
+!modulefiles/go
