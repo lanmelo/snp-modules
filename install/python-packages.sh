@@ -8,12 +8,13 @@ install() {
 
 module load python/3.7.3
 
+pip install virtualenv
+
 install numpy		1.16.1
 install scipy		1.3.0
 install biopython 	1.73
 install matplotlib 	3.1.0
 install pysam 		0.15.2
-install virtualenv
 
 module load numpy
 install HTSeq 0.11.2
